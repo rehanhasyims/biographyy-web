@@ -1,0 +1,212 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #111;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 30px ;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #e63946;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 100px;
+  background: linear-gradient(135deg, #fff, #f2f2f2);
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #111;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  background: #e63946;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #b92b39;
+}
+
+.hero-img img {
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 1px 20px rgb(0, 0, 0);
+   transition: transform 0.3s;
+}
+
+.hero-img img:hover {
+  transform: scale(1.05);
+} 
+
+
+
+.biografi {
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.biografi h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.bio-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.bio-content img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 12px 1px rgb(0, 0, 0);
+  transition: transform 0.3s;
+}
+
+.bio-content img:hover {
+  transform: scale(1.05);
+}
+
+.bio-content p {
+  max-width: 600px;
+  color: #444;
+  text-align: justify;
+}
+
+
+.karier {
+  background: #f0f0f0;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.karier h2 {
+  margin-bottom: 40px;
+}
+
+.karier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.747);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.722);
+}
+
+
+.prestasi {
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.prestasi ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.prestasi li {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+
+.galeri {
+  background: #f0f0f0;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.gallery-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.721);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.721);
+}
+
+
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}

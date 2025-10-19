@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
@@ -21,8 +20,8 @@ body {
   background: #111;
   color: white;
   position: sticky;
-  top: 0;
-  z-index: 10;
+  /* top: 0; */
+  /* z-index: 10; */
 }
 
 .navbar .logo {
@@ -60,7 +59,7 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 50px;
   color: #111;
 }
 
@@ -80,18 +79,28 @@ body {
 }
 
 .btn:hover {
-  background: #b92b39;
+  background: #ffffff;
+  border: solid 1px #ff0015;
+  box-shadow: #ca0014 0px 0px 24px 0px;
+}
+
+.herocontainer {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 3px 20px rgb(0, 0, 0);
+  height: 280px;
 }
 
 .hero-img img {
-  width: 420px;
+  width: 450px;
   border-radius: 20px;
   box-shadow: 0 1px 20px rgb(0, 0, 0);
    transition: transform 0.3s;
 }
 
 .hero-img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
+  box-shadow: 0 1px 35px rgb(0, 0, 0);
 } 
 
 
@@ -113,6 +122,13 @@ body {
   justify-content: center;
 }
 
+.biocontainer {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1px 1px 12px 1px rgb(0, 0, 0);
+  height: 165px;
+}
+
 .bio-content img {
   width: 300px;
   border-radius: 20px;
@@ -121,7 +137,8 @@ body {
 }
 
 .bio-content img:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
+    box-shadow: 1px 1px 20px 1px rgb(0, 0, 0);
 }
 
 .bio-content p {
@@ -130,6 +147,18 @@ body {
   text-align: justify;
 }
 
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover{
+    color: rgb(211, 0, 0);
+    text-decoration:none;
+    text-shadow: 0 0 24px rgb(255, 0, 0);
+}
 
 .karier {
   background: #f0f0f0;
@@ -160,6 +189,80 @@ body {
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.722);
 }
 
+.card img {
+  width: 60px;
+  margin-top: 32px;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card1 {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.747);
+  transition: transform 0.3s;
+}
+
+.card1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.722);
+}
+
+.card1 img {
+  width: 90px;
+  margin-top: 39px;
+    transition: transform 0.3s;
+}
+
+.card1 img:hover {
+  transform: scale(1.1);
+}
+
+.card2 {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.747);
+  transition: transform 0.3s;
+}
+
+.card2:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.722);
+}
+
+.card2 img {
+  width: 70px;
+  margin-top: 25px;
+}
+
+.gambar {
+  display: flex;
+  justify-content: space-around;
+    align-items: center;
+}
+
+.gambar img {
+  transition: transform 0.3s;
+}
+
+.gambar img:hover {
+  transform: scale(1.1);
+}
+
+.panah img {
+  width: 40px;
+  margin-top: 30px;
+}
+
+.al-nasr img {
+  width: 50px;
+  margin-top: 26px;
+}
 
 .prestasi {
   padding: 80px 100px;
@@ -183,11 +286,45 @@ body {
   text-align: center;
 }
 
+
+
 .gallery-grid {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+}
+
+.container {
+  border-radius: 15px;
+  background: #111;
+  overflow: hidden;
+  height: 140px;
+  box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.721);
+}
+
+.container2 {
+  border-radius: 15px;
+  background: #111;
+  overflow: hidden;
+  height: 160px;
+  box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.721);
+}
+
+.container3 {
+  border-radius: 15px;
+  background: #111;
+  overflow: hidden;
+  height: 140px;
+  box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.721);
+}
+
+.container4 {
+  border-radius: 15px;
+  background: #111;
+  overflow: hidden;
+  height: 160px;
+  box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.721);
 }
 
 .gallery-grid img {
@@ -198,8 +335,8 @@ body {
 }
 
 .gallery-grid img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.721);
+  transform: scale(1.15);
+  box-shadow: 0px 1px 25px 2px rgba(0, 0, 0, 0.721);
 }
 
 
@@ -208,5 +345,5 @@ footer {
   color: #aaa;
   text-align: center;
   padding: 20px;
-  font-size: 0.9rem;
+  font-size: 15px;
 }
